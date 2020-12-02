@@ -13,29 +13,25 @@ public class Main1 {
 		*/
 		DayOne obj = new DayOne();
 		for(int increment =0; increment < ar.length; increment++) {
+			int newSum = ar[increment];
 			for (int i= 0; i < data.length; i++){
+				int testableData= data[i];
 				for (int in =0; in < add.length;in++){
-					int newSum = ar[increment];
 					int dataPoolAdds= add[in];
-					int testableData= data[i];
 					obj.Addition(newSum, dataPoolAdds);					
 					obj.Additon(newSum, testableData, dataPoolAdds);
 					if (obj.EqualsTwentyTwenty(obj.Additon(newSum, dataPoolAdds, testableData))){
-						obj.multiplication(newSum, testableData, dataPoolAdds);
-						System.out.println(obj.multiplication(newSum, testableData, dataPoolAdds));
+						System.out.println(newSum+" * "+testableData +" * "+dataPoolAdds+" = " + obj.multiplication(newSum, testableData, dataPoolAdds));
 						break;
 					}
-					break;
-					
 				}
-				if (obj.EqualsTwentyTwenty(obj.Addition(newSum, dataPoolAdds))) {
-					obj.Multiplication(newSum, dataPoolAdds) ;
-					System.out.println(obj.Multiplication(newSum, dataPoolAdds) );
+				if (obj.EqualsTwentyTwenty(obj.Addition(newSum, testableData))) {
+					System.out.println(testableData+ " * " + newSum + " = "+ obj.Multiplication(newSum, testableData) );
 					break;
-					}
-				break;
-			}
+				}
 			
+			}
+		
 		}
 	}
 

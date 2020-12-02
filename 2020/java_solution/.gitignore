@@ -29,4 +29,7 @@ hs_err_pid*
 #This is to ingore the path that eclipse is creatiing in my projects
 .classpath/
 .project/
+# was trying to ingore all class files but have to spefiic which ones and where 
+#
+bin/Advent/*.class
 
