@@ -25,12 +25,15 @@ public class Main1 {
 						System.out.println(obj.multiplication(newSum, testableData, dataPoolAdds));
 						break;
 					}
-					if (obj.EqualsTwentyTwenty(obj.Addition(newSum, dataPoolAdds))) {
-						obj.Multiplication(newSum, dataPoolAdds) ;
-						System.out.println(obj.Multiplication(newSum, dataPoolAdds) );
-						break;
-						}
+					break;
+					
 				}
+				if (obj.EqualsTwentyTwenty(obj.Addition(newSum, dataPoolAdds))) {
+					obj.Multiplication(newSum, dataPoolAdds) ;
+					System.out.println(obj.Multiplication(newSum, dataPoolAdds) );
+					break;
+					}
+				break;
 			}
 			
 		}
